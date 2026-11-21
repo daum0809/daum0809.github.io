@@ -109,7 +109,7 @@
           {
             "@type": "Course",
             "name": "초등 원어민 영어",
-            "description": "어학원 수준 원어민 수업, 리딩·라이팅·스피킹 통합. 연세학원 영어 선생님이 직접 쓴 워크북 27권으로 수업"
+            "description": "어학원 수준 원어민 수업, 리딩·라이팅·스피킹 통합. 연세학원 영어 선생님이 쓴 영어 워크북 27권(인사이트북스, ISBN 발행)"
           },
           {
             "@type": "Course",
@@ -169,7 +169,7 @@
       "@id": "https://yonsei-academy.kr/#insightbooks",
       "name": "인사이트북스",
       "alternateName": "Insight Books",
-      "description": "학습코칭연구소 연세학원이 운영하는 교육 출판사. 10대 학생들이 직접 쓴 '10대에 처음 쓰는 나의 첫 책' 시리즈 5권 출판.",
+      "description": "학습코칭연구소 연세학원이 운영하는 교육 출판사. 10대 학생들이 직접 쓴 '10대에 처음 쓰는 나의 첫 책' 시리즈 5권과 연세학원 영어 선생님이 쓴 영어 워크북 27권(ISBN 발행)을 출판.",
       "parentOrganization": {
         "@id": "https://yonsei-academy.kr/#academy"
       }
@@ -417,6 +417,9 @@
   .book-card.type-essay::before { background: #a78bfa; }
   .book-card.type-novel::before { background: #f97316; }
   .book-card.type-comic::before { background: #38bdf8; }
+  .book-card.type-workbook::before { background: var(--sky); }
+  .book-wide { grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; }
+  .book-wide .book-cover { margin-bottom: 0; }
   .book-card:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); }
   .book-cover { font-size: 2.6rem; margin-bottom: 14px; display: block; text-align: center; }
   .book-type { font-size: 0.63rem; letter-spacing: 0.14em; font-weight: 600; color: var(--orange); text-transform: uppercase; margin-bottom: 5px; }
@@ -621,8 +624,8 @@
         <div class="stat-label">경시 / 영재 / 사고력</div>
       </div>
       <div class="stat-card">
-        <span class="stat-num">5권</span>
-        <div class="stat-label">인사이트북스 출판 시리즈</div>
+        <span class="stat-num">32권</span>
+        <div class="stat-label">인사이트북스 출판 · 학생 책 5 · 영어 워크북 27</div>
       </div>
     </div>
   </div>
@@ -885,7 +888,7 @@
           </div>
           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);padding:16px 8px;border-radius:3px;text-align:center;">
             <div style="font-family:'Playfair Display',serif;font-size:clamp(1.25rem,4.6vw,1.8rem);color:var(--orange-light);font-weight:700;">27권</div>
-            <div style="color:rgba(255,255,255,0.3);font-size:0.68rem;margin-top:3px;">영어 선생님이 쓴 워크북</div>
+            <div style="color:rgba(255,255,255,0.3);font-size:0.68rem;margin-top:3px;">영어 선생님이 쓴 워크북 · ISBN 발행</div>
           </div>
         </div>
       </div>
@@ -941,7 +944,7 @@
     <div class="reveal">
       <div class="section-label" style="color:var(--orange);">인사이트북스 출판사</div>
       <h2 class="section-title" style="color:var(--white);">10대가 직접 쓴<br>책이 다른 이유</h2>
-      <p class="section-desc" style="color:rgba(255,255,255,0.88);">«10대에 처음 쓰는 나의 첫 책» 시리즈. 지금까지 5권 출판.</p>
+      <p class="section-desc" style="color:rgba(255,255,255,0.88);">학생이 직접 쓴 «10대에 처음 쓰는 나의 첫 책» 시리즈 5권, 연세학원 영어 선생님이 쓴 영어 워크북 27권을 출판했습니다.</p>
     </div>
     <div class="books-grid reveal" style="margin-top:48px;">
       <div class="book-card type-math"><span class="book-cover">📐</span><div class="book-type">수학 개념서</div><div class="book-title">나의 첫 책 — 수학 개념</div><div class="book-grade">초등 6학년</div></div>
@@ -949,10 +952,11 @@
       <div class="book-card type-essay"><span class="book-cover">✍️</span><div class="book-type">논술 교재</div><div class="book-title">나의 첫 책 — 논술</div><div class="book-grade">중학교 1학년</div></div>
       <div class="book-card type-novel"><span class="book-cover">📖</span><div class="book-type">소설</div><div class="book-title">나의 첫 책 — 소설</div><div class="book-grade">초등 6학년</div></div>
       <div class="book-card type-comic"><span class="book-cover">🎨</span><div class="book-type">만화</div><div class="book-title">나의 첫 책 — 만화</div><div class="book-grade">초등 4학년</div></div>
+      <div class="book-card type-workbook book-wide"><span class="book-cover">📘</span><div><div class="book-type">영어 워크북 · ISBN 발행</div><div class="book-title">영어 워크북 27권</div><div class="book-grade">연세학원 영어 선생님 저</div></div></div>
     </div>
     <div class="pub-brand reveal">
       <div><div class="pub-logo">인사이트북스</div><div style="color:rgba(255,255,255,0.2);font-size:0.68rem;letter-spacing:0.1em;margin-top:3px;">INSIGHT BOOKS</div></div>
-      <p class="pub-desc">10대 학생이 직접 쓴 책 시리즈. 쓰는 경험으로 생각하고 표현하는 힘을 기릅니다. 현재 5권 출판.</p>
+      <p class="pub-desc">10대 학생이 직접 쓴 책과 영어 선생님이 쓴 워크북을 펴내는 교육 출판사. 쓰는 경험으로 생각하고 표현하는 힘을 기릅니다. 학생 책 5권, 영어 워크북 27권 출판.</p>
     </div>
   </div>
 </section>
